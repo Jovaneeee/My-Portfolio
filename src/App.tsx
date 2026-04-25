@@ -1,5 +1,13 @@
 import { useState } from "react";
 import {motion} from "framer-motion";
+import court from "./assets/court.png";
+import depression from "./assets/depression.png";
+import guidance from "./assets/guidance.png";
+import image from "./assets/image.png";
+import julies from "./assets/julies.png";
+import van from "./assets/van.png";
+import vandel from "./assets/vandel.png";
+
 
 
 type SkillProps = {
@@ -76,7 +84,7 @@ const projects: Project[] = [
   {
     title: "E commerce Website Food Ordering System",
     description: "Julie’s Bakeshop ordering system that manages orders, products, and sales with a simple and efficient user interface.",
-    image: "../src/assets/julies.png",
+    image: julies,
     tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
     demo: "#",
     github: "#",
@@ -84,7 +92,7 @@ const projects: Project[] = [
   {
     title: "University Guidance Management System",
     description: "Manages student counseling records, appointments, and guidance services, helping counselors track cases and support student well-being efficiently.",
-    image: "../src/assets/guidance.png",
+    image: guidance,
     tech: ["NodeJS", "MongoDB", "ExpressJS", "React", "Bootstrap"],
     demo: "#",
     github: "#",
@@ -92,7 +100,7 @@ const projects: Project[] = [
   {
     title: "Depression Detection System",
     description: "AI-powered system for detecting signs of depression in users.",
-    image: "../src/assets/depression.png",
+    image: depression,
     tech: ["Laravel", "MySQL", "Tensorlow.js", "Bootstrap", "Python"],
     demo: "#",
     github: "#",
@@ -100,7 +108,7 @@ const projects: Project[] = [
    {
     title: "Covert Court Management System",
     description: "Manages court cases, schedules, and documents for efficient legal proceedings.",
-    image: "../src/assets/court.png",
+    image: court,
     tech: ["Laravel", "MySQL", "Bootstrap", "Multitenancy"],
     demo: "#",
     github: "#",
@@ -108,7 +116,7 @@ const projects: Project[] = [
    {
     title: "LYDO and SK President Profiling",
     description: "Designed a profiling system for LYDO and SK Presidents to streamline data collection and reporting processes.",
-    image: "../src/assets/image.png",
+    image: image,
     tech: ["Laravel", "MySQL", "Bootstrap"],
     demo: "#",
     github: "#",
@@ -250,7 +258,7 @@ const App: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-tr from-pink-500 to-indigo-500 blur-2xl opacity-40 rounded-full"></div>
 
                 <img
-                  src="../src/assets/IMG_7468.JPG"
+                  src={vandel}
                   alt="Hero"
                   className="relative w-72 md:w-96 md:h-96 rounded-full border-4 border-white shadow-2xl object-cover"
                 />
@@ -272,7 +280,7 @@ const App: React.FC = () => {
             className="flex justify-center"
           >
             <img
-              src="../src/assets/IMG_1852.JPG"
+              src={van}
               alt="About"
               className="rounded-2xl md:w-96 shadow-xl  border border-gray-700 border-4 border-white object-cover w-full h-auto"
             />
