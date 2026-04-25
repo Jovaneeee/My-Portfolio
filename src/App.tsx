@@ -451,7 +451,7 @@ const App: React.FC = () => {
 
       </div>
     </section>
-<section id="contact" className=" bg-gradient-to-br from-gray-900 to-gray-800 pt-16 px-6 pb-16">
+<section id="contact" className=" bg-gradient-to-br from-gray-900 to-gray-800 pt-16 px-6 pb-16 overflow-hidden">
 
   <div className="max-w-6xl mx-auto">
 
@@ -460,7 +460,7 @@ const App: React.FC = () => {
 </h2>
 
 
-    <div className="grid md:grid-cols-2 gap-10">
+    <div className="grid md:grid-cols-2 gap-10 items-start">
 
       {/* LEFT - FORM CARD */}
       <motion.div 
@@ -468,8 +468,7 @@ const App: React.FC = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
               viewport={{ once: true }}
-               className="bg-gray-900 p-8 rounded-md shadow-md border border-gray-700 flex flex-col gap-4">
-
+className="min-w-0 w-full bg-gray-900 p-6 md:p-8 rounded-md shadow-md border border-gray-700 flex flex-col gap-4">
 <label className="text-gray-300 text-sm" htmlFor="name">Name:</label>
         <input
           className="p-2 rounded-md bg-gray-800 text-sm text-white placeholder-gray-500 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -504,7 +503,7 @@ const App: React.FC = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
               viewport={{ once: true }}
-            className="flex flex-col justify-center text-gray-300">
+            className="min-w-0 w-full flex flex-col justify-center text-gray-300">
 
           <div className="mb-4 space-y-4">
 
@@ -515,7 +514,7 @@ const App: React.FC = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-sm">Location</h3>
-                <p className="text-gray-600">Bukidnon, Philippines</p>
+                <p className="text-gray-400 break-words text-sm">Bukidnon, Philippines</p>
               </div>
             </div>
 
@@ -525,7 +524,7 @@ const App: React.FC = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-sm">Email</h3>
-                <p className="text-gray-600">jovannediel@gmail.com</p>
+                <p className="text-gray-400 break-words text-sm">jovannediel@gmail.com</p>
               </div>
             </div>
 
@@ -535,15 +534,15 @@ const App: React.FC = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-sm">Phone</h3>
-                <p className="text-gray-600">+63 965 658 4965</p>
+                <p className="text-gray-400 break-words text-sm">+63 965 658 4965</p>
               </div>
             </div>
           </div>
 
 
-            <h1 className="text-white text-2xl font-bold">Let's Talk About Your Project</h1>
+            <h1 className="text-white text-xl md:text-2xl font-bold leading-snug">Let's Talk About Your Project</h1>
             <br />
-            <p className="mb-6 leading-relaxed">
+            <p className="mb-6 leading-relaxed text-sm md:text-base break-words">
               I'm currently available for freelance work or full-time positions. If you have a project that you want to get started, think you need my help with something, or just want to say hi, then get in touch.        </p>
 
                     {/* SOCIAL BUTTONS */}
@@ -551,7 +550,7 @@ const App: React.FC = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
-              viewport={{ once: true }} className="flex gap-4">
+              viewport={{ once: true }} className="flex flex-wrap gap-4">
 
                       <a href="https://github.com/Jovaneeee" className="rounded-full bg-gray-800 hover:bg-gray-700 transition flex items-center justify-center w-12 h-12">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-github" viewBox="0 0 16 16">
